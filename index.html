@@ -25,6 +25,16 @@
     z-index: 1;
     }
 
+    a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none;
+    }
+
+    a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+    }
+
+
     .center-wrapper {
         position: absolute; 
         top: 50%; 
@@ -90,7 +100,7 @@
             <h2 style="text-align: center;">About Me</h2>
             <p style="text-align: center;">Kaizen</p>
             <p style="text-align: center;"><br>Contact:<br></p>
-            <h5 style="text-align: center;">Discord:@ombocombo_31045<br><br><br><br>Adjust Music Volume</h5>
+            <h5 style="text-align: center;"><a href ="https://discordapp.com/users/1182762707800301752">Discord:@ombocombo_31045</a><br><br><a href="https://www.github.com/Kaizen-lol">Github Profile</a><br><br><br><br>Adjust Music Volume</h5>
             <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.01" value="1" onchange="adjustVolume()">
             <div class="button-container">
                 <button id="btnPlay" onclick="playAudio();">Play</button>
